@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sctyle.css" />
+  </head>
+  <body>
+    <div class="editor">
+      <div class="toolbar">
+        <div class="toolbar-item">
+          <input type="file" id="imgFile" />
+        </div>
+        <div class="toolbar-item">
+          <label class="toolbar-label" for="brightness">Brightness</label>
+          <input type="range" id="brightness" min="0" max="200" />
+        </div>
+        <div class="toolbar-item">
+          <label class="toolbar-label" for="Saturation">Saturation</label>
+          <input type="range" id="saturation" min="0" max="200" />
+        </div>
+        <div class="toolbar-item">
+          <label class="toolbar-label" for="blur">Blur</label>
+          <input type="range" id="blur" min="0" max="10" />
+        </div>
+        <div class="toolbar-item">
+          <label class="toolbar-label" for="inversion">Inversion</label>
+          <input type="range" id="inversion" min="0" max="100" />
+        </div>
+      </div>
+      <div class="img">
+        <canvas id="canvas" height="500" width="500"></canvas>
+      </div>
+    </div>
+    <script src="logic.js" defer></script>
+  </body>
+</html>

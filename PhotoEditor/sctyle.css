@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.editor {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: grey;
+}
+
+.toolbar {
+  width: 250px;
+  background-color: #fff;
+}
+
+.toolbar-item {
+  padding: 15px;
+}
+
+.toolbar-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.toolbar-item input {
+  width: 100%;
+}
+
+.img {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+#canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
